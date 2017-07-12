@@ -1,6 +1,6 @@
 # ReactJS Basics
 
-This repository accompanies my ReactJS / Redux - Basics YouTube Series.
+This repo is a fork of https://github.com/mschwarzmueller/reactjs-css-animation-basics by the amazingly talented Max Schwarzmüller where he details animation in React. It has accompanying videos starting at https://www.youtube.com/watch?v=ztvNwFV0Ai0&t=11s
 
 # Usage
-Switch to the branch you're interested in (branches = different stages in the series) and compare/ download the source code.
+Navigate between the different sections of the app to see examples of different implementations of animations within React
