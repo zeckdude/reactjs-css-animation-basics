@@ -10,6 +10,10 @@ var config = {
         filename: "bundle.js",
         publicPath: "/app/"
     },
+    devServer: {
+    inline:true,
+    port: 8008
+  },
     module: {
         loaders: [
             {
@@ -19,7 +23,11 @@ var config = {
                 query: {
                     presets: ["react", "es2015", "stage-2"]
                 }
-            }
+            },
+            {
+              test: /\.css$/,
+              loader: 'style!css'
+            },
         ]
     }
 };

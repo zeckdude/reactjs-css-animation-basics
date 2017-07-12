@@ -1,0 +1,140 @@
+/* General */
+
+nav li {
+  text-transform: uppercase;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* CSS Animations */
+
+.slide {
+  animation: slide 1s ease-in forwards;
+}
+
+.flip {
+  animation: flip 2s ease-out alternate 2;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(80px);
+  }
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+
+/* React.js + CSS Transitions */
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-out;
+}
+
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-leave-active {
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+}
+
+.fade-appear {
+  opacity: 0;
+}
+
+.fade-appear-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-out;
+}
+
+
+/* React.js + CSS Animations */
+
+.slide-enter {
+  transform: translateX(-100%);
+}
+
+.slide-enter-active {
+  animation: slide-in 300ms ease-out forwards;
+}
+
+.slide-leave {
+  transform: translateX(0%);
+}
+
+.slide-leave-active {
+  animation: slide-out 300ms ease-out forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.flip-enter {
+  transform: rotateY(180deg);
+}
+
+.flip-enter-active {
+  animation: flip-in 300ms ease-out forwards;
+}
+
+.flip-leave {
+  transform: rotateY(0deg);
+}
+
+.flip-leave-active {
+  animation: flip-out 300ms ease-out forwards;
+}
+
+@keyframes flip-in {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes flip-out {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(90deg);
+  }
+}
